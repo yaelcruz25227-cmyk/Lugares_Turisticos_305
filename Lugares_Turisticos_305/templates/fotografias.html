@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turismo</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f1f5ef;
+    color: #26352a;
+}
+header, footer {
+    background: #285943;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background: #193d2d;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+.contenedor, .tarjeta {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0002;
+}
+.contenedor {
+    max-width: 400px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, button {
+    padding: 12px;
+    border-radius: 6px;
+}
+input {
+    border: 1px solid #aaa;
+}
+button {
+    background: #34734c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+.tarjeta img {
+    width: 100%;
+    border-radius: 8px;
+}
+h2, h3 {
+    color: #285943;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Lugares Turísticos</h1>
+</header>
+
+<nav>
+    <a href="/">Inicio</a>
+    <a href="#agregar">Agregar</a>
+    <a href="#registrados">Lugares</a>
+</nav>
+
+<main>
+<section class="contenedor" id="agregar">
+    <h2>Agregar lugar</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input name="nombre" placeholder="Nombre" required>
+        <input name="ubicacion" placeholder="Ubicación" required>
+        <input type="file" name="foto" accept=".jpg,.jpeg,.png" required>
+        <button>Agregar</button>
+    </form>
+</section>
+
+<section id="registrados">
+    <h2>Lugares registrados</h2>
+    <div class="tarjetas">
+        {% for lugar in lugares %}
+        <div class="tarjeta">
+            <h3>{{ lugar.nombre }}</h3>
+            <p>{{ lugar.ubicacion }}</p>
+            <img src="{{ url_for('static', filename='fotos/' + lugar.foto) }}" alt="Foto">
+        </div>
+        {% else %}
+        <p>No hay lugares registrados.</p>
+        {% endfor %}
+    </div>
+</section>
+</main>
+
+<footer>© 2026 - Sistema de Turismo</footer>
+
+</body>
+</html>

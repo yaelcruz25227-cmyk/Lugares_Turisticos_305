@@ -1,0 +1,32 @@
+
+{% extends "base.html" %}
+
+{% block contenido %}
+
+<div class="login">
+
+    <h2>Inicio de sesión</h2>
+    <p>Acceso para el administrador de la plataforma.</p>
+
+    <form method="POST">
+
+        <label>Correo electrónico</label>
+        <input type="email" name="correo" required
+               placeholder="Ingresa tu correo">
+
+        <label>Contraseña</label>
+        <input type="password" name="contraseña" required
+               placeholder="Ingresa tu contraseña">
+
+        <button type="submit">Iniciar sesión</button>
+
+    </form>
+
+    <p class="error">{{ error }}</p>
+
+    <p><b>Usuario de prueba:</b> admin@gmail.com</p>
+    <p><b>Contraseña:</b> 12345</p>
+
+</div>
+
+{% endblock %}

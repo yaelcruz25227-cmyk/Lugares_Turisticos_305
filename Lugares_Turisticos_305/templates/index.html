@@ -1,0 +1,45 @@
+
+{% extends "base.html" %}
+
+{% block contenido %}
+
+<section class="portada">
+    <h2>Descubre San José del Rincón</h2>
+    <p>Explora sus paisajes, tradiciones y riqueza cultural.</p>
+    <a class="boton" href="/lugares">Explorar lugares</a>
+</section>
+
+<h2 class="titulo">¿Qué puedes descubrir?</h2>
+
+<div class="tarjetas">
+
+    <div class="tarjeta">
+        <img src="{{ url_for('static', filename='imagenes/bosque.jpg') }}">
+        <h3>Naturaleza</h3>
+        <p>Conoce los paisajes rurales y espacios naturales.</p>
+    </div>
+
+    <div class="tarjeta">
+        <img src="{{ url_for('static', filename='imagenes/iglesia.jpg') }}">
+        <h3>Cultura</h3>
+        <p>Descubre las tradiciones de nuestras comunidades.</p>
+    </div>
+
+    <div class="tarjeta">
+        <img src="{{ url_for('static', filename='imagenes/gastronomia.jpg') }}">
+        <h3>Gastronomía</h3>
+        <p>Conoce los sabores de la región.</p>
+    </div>
+
+</div>
+
+<section class="informacion">
+    <h2>Turismo para todos</h2>
+    <p>
+        Nuestra plataforma ayuda a conocer los lugares rurales,
+        sus horarios, ubicaciones y rutas turísticas.
+    </p>
+    <a class="boton" href="/rutas">Conocer las rutas</a>
+</section>
+
+{% endblock %}

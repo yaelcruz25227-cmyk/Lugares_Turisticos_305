@@ -1,0 +1,49 @@
+
+{% extends "base.html" %}
+
+{% block contenido %}
+
+<h2 class="titulo">Lugares turísticos</h2>
+<p class="centrado">Explora los atractivos rurales del municipio.</p>
+
+<div class="filtros">
+    <a href="/lugares">Todos</a>
+    <a href="/lugares?tipo=Natural">Naturales</a>
+    <a href="/lugares?tipo=Cultural">Culturales</a>
+    <a href="/lugares?tipo=Gastronomía">Gastronomía</a>
+</div>
+
+<div class="tarjetas">
+
+{% for lugar in lugares %}
+
+    <div class="tarjeta">
+        <img src="{{ url_for('static', filename='imagenes/' + lugar.imagen) }}"
+             alt="{{ lugar.nombre }}">
+
+        <h3>{{ lugar.nombre }}</h3>
+
+        <span class="categoria">{{ lugar.tipo }}</span>
+
+        <p>{{ lugar.descripcion }}</p>
+
+        <p><b>Horario:</b> {{ lugar.horario }}</p>
+
+        <p><b>Ubicación:</b> {{ lugar.ubicacion }}</p>
+
+        <a class="boton"
+           href="https://www.google.com/maps/search/?api=1&query=San+José+del+Rincón+Estado+de+México"
+           target="_blank">
+           Ver ubicación
+        </a>
+    </div>
+
+{% else %}
+
+    <p>No hay lugares en esta categoría.</p>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

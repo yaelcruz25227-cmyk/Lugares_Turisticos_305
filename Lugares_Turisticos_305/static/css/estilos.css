@@ -1,0 +1,428 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f5ef;
+    color: #333;
+}
+
+header {
+    background: #245b42;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+nav {
+    background: #183e2d;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c8e6a0;
+}
+
+main {
+    padding: 30px 6%;
+    min-height: 450px;
+}
+
+.portada {
+    background: linear-gradient(#0007, #0007),
+    url("../imagenes/paisaje.jpg") center/cover;
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+    border-radius: 15px;
+}
+
+.portada h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.portada p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.boton {
+    display: inline-block;
+    background: #347b50;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background: #205536;
+}
+
+.titulo {
+    text-align: center;
+    margin: 30px 0 15px;
+    color: #245b42;
+    font-size: 28px;
+}
+
+.centrado {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+    margin: 25px 0;
+}
+
+.tarjeta {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0002;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 9px;
+    margin-bottom: 12px;
+}
+
+.tarjeta h3 {
+    color: #245b42;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.categoria {
+    display: inline-block;
+    background: #dcebdc;
+    color: #245b42;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px;
+}
+
+.filtros a {
+    background: #245b42;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.informacion {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+.informacion h2 {
+    color: #245b42;
+}
+
+.informacion ul {
+    padding-left: 25px;
+}
+
+.login {
+    background: white;
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0002;
+}
+
+.login h2 {
+    text-align: center;
+    color: #245b42;
+    margin-bottom: 15px;
+}
+
+.login label {
+    display: block;
+    margin-top: 15px;
+}
+
+.login input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login button {
+    width: 100%;
+    padding: 13px;
+    background: #245b42;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    margin-top: 12px;
+}
+
+footer {
+    background: #183e2d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .portada {
+        padding: 70px 15px;
+    }
+
+    .portada h2 {
+        font-size: 27px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        padding: 20px 4%;
+    }
+}
+
+/* GALERÍA RURAL */
+
+.galeria-rural {
+    margin: 45px 0;
+    padding: 30px;
+    background: #eaf1e8;
+    border-radius: 15px;
+}
+
+.galeria-encabezado {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.galeria-encabezado h2 {
+    color: #245b42;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.galeria-encabezado p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.foto-rural {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px #0002;
+    transition: transform 0.3s;
+}
+
+.foto-rural:hover {
+    transform: translateY(-6px);
+}
+
+.foto-rural img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.foto-rural h3 {
+    color: #245b42;
+    padding: 12px 12px 5px;
+}
+
+.foto-rural p {
+    padding: 5px 12px 18px;
+    color: #555;
+    font-size: 14px;
+}
+
+@media(max-width: 900px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 500px) {
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CATEGORÍAS TURÍSTICAS */
+
+.categorias-turismo {
+    margin: 40px 0;
+}
+
+.titulo-categorias {
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.titulo-categorias h2 {
+    color: #245b42;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.titulo-categorias p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.categoria-seccion {
+    margin: 40px 0;
+}
+
+.categoria-encabezado {
+    background: #245b42;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 22px;
+}
+
+.categoria-encabezado h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.categoria-encabezado p {
+    color: #e4f1e5;
+}
+
+.galeria-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.tarjeta-lugar {
+    background: white;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px #0002;
+    transition: 0.3s;
+}
+
+.tarjeta-lugar:hover {
+    transform: translateY(-6px);
+}
+
+.tarjeta-lugar img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.datos-lugar {
+    padding: 20px;
+}
+
+.datos-lugar h3 {
+    color: #245b42;
+    margin-bottom: 12px;
+}
+
+.datos-lugar p {
+    color: #555;
+    line-height: 1.6;
+    min-height: 95px;
+}
+
+.datos-lugar span {
+    display: block;
+    color: #347b50;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.datos-lugar a {
+    display: inline-block;
+    background: #347b50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 7px;
+}
+
+.datos-lugar a:hover {
+    background: #183e2d;
+}
+
+@media(max-width: 850px) {
+    .galeria-categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 550px) {
+    .galeria-categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-categorias h2 {
+        font-size: 25px;
+    }
+}

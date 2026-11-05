@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro</title>
+
+<style>
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1>Crear una cuenta</h1>
+
+    {% with mensajes = get_flashed_messages() %}
+        {% for mensaje in mensajes %}
+            <p class="mensaje">{{ mensaje }}</p>
+        {% endfor %}
+    {% endwith %}
+
+    <form method="POST">
+
+        <label>Nombre completo:</label>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+        <label>Correo electrónico:</label>
+        <input type="email" name="correo" placeholder="Tu correo" required>
+
+        <label>Contraseña:</label>
+        <input type="password" name="password" placeholder="Mínimo 8 caracteres" minlength="8" required>
+
+        <button type="submit">Registrarme</button>
+
+    </form>
+
+    <p>¿Ya tienes una cuenta?</p>
+    <a href="{{ url_for('login') }}">Iniciar sesión</a>
+
+</div>
+
+</body>
+</html>

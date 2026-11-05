@@ -1,0 +1,565 @@
+
+{% extends "base.html" %}
+
+{% block contenido %}
+
+<section class="encabezado-rutas">
+    <h2>Rutas Turísticas de San José del Rincón</h2>
+    <p>
+        Descubre la naturaleza, historia, cultura y tradiciones
+        de nuestras comunidades rurales.
+    </p>
+</section>
+
+<section class="presentacion-rutas">
+    <h2>Explora nuestro municipio</h2>
+    <p>
+        San José del Rincón se encuentra en el Estado de México.
+        Cuenta con extensas zonas boscosas, comunidades rurales,
+        patrimonio histórico y tradiciones de origen mazahua.
+        Sus actividades económicas incluyen la agricultura,
+        ganadería, comercio y artesanías.
+    </p>
+</section>
+
+<!-- RUTA 1 -->
+
+<section class="ruta-completa">
+
+    <div class="ruta-titulo">
+        <span>RUTA 01</span>
+        <h2>Ruta de la Naturaleza</h2>
+        <p>Conoce los bosques y la riqueza natural del municipio.</p>
+    </div>
+
+    <div class="lugares-ruta">
+
+        <article class="lugar-ruta">
+            <img src="{{ url_for('static', filename='imagenes/bosque.jpg') }}"
+                 alt="Bosques de La Mesa">
+
+            <div class="contenido-ruta">
+                <h3>1. Santuario de la Mariposa Monarca La Mesa</h3>
+
+                <p>
+                    Es uno de los principales atractivos naturales
+                    de San José del Rincón. Cuenta con bosques de
+                    pino y oyamel, senderos y espacios para disfrutar
+                    de la naturaleza.
+                </p>
+
+                <p>
+                    Durante la temporada de hibernación se puede
+                    observar la llegada de la mariposa monarca.
+                </p>
+
+                <p><b>Ubicación:</b> Localidad La Mesa,
+                    San José del Rincón.</p>
+
+                <p><b>Temporada de mariposa:</b>
+                    Noviembre a marzo.</p>
+
+                <p><b>Horario:</b>
+                    Consultar con la administración del parador.</p>
+
+                <p><b>Servicios:</b>
+                    Cabañas, restaurante, campismo, senderismo
+                    y recorridos con guía.</p>
+
+                <a class="boton"
+                   href="https://www.google.com/maps/search/?api=1&query=Parador+Turistico+La+Mesa+San+Jose+del+Rincon"
+                   target="_blank">
+                   Ver ubicación
+                </a>
+            </div>
+        </article>
+
+        <article class="lugar-ruta">
+            <img src="{{ url_for('static', filename='imagenes/paisaje.jpg') }}"
+                 alt="Bosque y naturaleza">
+
+            <div class="contenido-ruta">
+                <h3>2. UMA Las Rosas</h3>
+
+                <p>
+                    Es un espacio de conservación de la naturaleza
+                    ubicado en una zona de bosques de pino y oyamel,
+                    dentro del territorio relacionado con la Reserva
+                    de la Biosfera Mariposa Monarca.
+                </p>
+
+                <p><b>Ubicación:</b>
+                    Municipio de San José del Rincón.</p>
+
+                <p><b>Horario:</b>
+                    Consultar disponibilidad y acceso.</p>
+
+                <p><b>Actividad:</b>
+                    Conocimiento y conservación de los espacios
+                    naturales.</p>
+
+                <a class="boton"
+                   href="https://www.google.com/maps/search/?api=1&query=UMA+Las+Rosas+San+Jose+del+Rincon"
+                   target="_blank">
+                   Ver ubicación
+                </a>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+<!-- RUTA 2 -->
+
+<section class="ruta-completa">
+
+    <div class="ruta-titulo">
+        <span>RUTA 02</span>
+        <h2>Ruta Histórica y Cultural</h2>
+        <p>Conoce la historia y el patrimonio de San José del Rincón.</p>
+    </div>
+
+    <div class="lugares-ruta">
+
+        <article class="lugar-ruta">
+            <img src="{{ url_for('static', filename='imagenes/iglesia.jpg') }}"
+                 alt="Parroquia del Señor San José">
+
+            <div class="contenido-ruta">
+                <h3>1. Parroquia del Señor San José</h3>
+
+                <p>
+                    Es uno de los principales espacios religiosos
+                    y culturales de la cabecera municipal.
+                    Forma parte de la identidad de la comunidad.
+                </p>
+
+                <p><b>Ubicación:</b>
+                    Centro de San José del Rincón.</p>
+
+                <p><b>Fecha importante:</b>
+                    Fiesta de San José, 19 de marzo.</p>
+
+                <p><b>Horario:</b>
+                    Consultar los horarios de celebración.</p>
+
+                <a class="boton"
+                   href="https://www.google.com/maps/search/?api=1&query=Parroquia+del+Señor+San+Jose+San+Jose+del+Rincon"
+                   target="_blank">
+                   Ver ubicación
+                </a>
+            </div>
+        </article>
+
+        <article class="lugar-ruta">
+            <img src="{{ url_for('static', filename='imagenes/hacienda.jpg') }}"
+                 alt="Ex Hacienda San Onofre">
+
+            <div class="contenido-ruta">
+                <h3>2. Ex Hacienda San Onofre</h3>
+
+                <p>
+                    Fue un antiguo rancho ganadero que posteriormente
+                    se convirtió en una importante hacienda maderera.
+                    Conserva parte de su histórica Casa Grande.
+                </p>
+
+                <p><b>Ubicación:</b>
+                    San Onofre Centro, C.P. 50663.</p>
+
+                <p><b>Horario:</b>
+                    Consultar previamente las condiciones de visita.</p>
+
+                <p><b>Interés turístico:</b>
+                    Historia, arquitectura y fotografía.</p>
+
+                <a class="boton"
+                   href="https://www.google.com/maps/search/?api=1&query=Ex+Hacienda+San+Onofre+San+Jose+del+Rincon"
+                   target="_blank">
+                   Ver ubicación
+                </a>
+            </div>
+        </article>
+
+        <article class="lugar-ruta">
+            <img src="{{ url_for('static', filename='imagenes/hacienda_providencia.jpg') }}"
+                 alt="Ex Hacienda La Providencia">
+
+            <div class="contenido-ruta">
+                <h3>3. Ex Hacienda La Providencia</h3>
+
+                <p>
+                    Es una construcción histórica levantada en 1776.
+                    Fue una antigua hacienda dedicada a la producción
+                    de zacatón y forma parte del patrimonio histórico
+                    municipal.
+                </p>
+
+                <p><b>Ubicación:</b>
+                    Localidad Providencia, Ejido El Depósito.</p>
+
+                <p><b>Horario:</b>
+                    Consultar previamente con la comunidad.</p>
+
+                <p><b>Interés turístico:</b>
+                    Historia y patrimonio arquitectónico.</p>
+
+                <a class="boton"
+                   href="https://www.google.com/maps/search/?api=1&query=Ex+Hacienda+La+Providencia+San+Jose+del+Rincon"
+                   target="_blank">
+                   Ver ubicación
+                </a>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+<!-- RUTA 3 -->
+
+<section class="ruta-completa">
+
+    <div class="ruta-titulo">
+        <span>RUTA 03</span>
+        <h2>Ruta Rural y Tradicional</h2>
+        <p>Descubre las costumbres y actividades de nuestras comunidades.</p>
+    </div>
+
+    <div class="lugares-ruta">
+
+        <article class="lugar-ruta">
+            <img src="{{ url_for('static', filename='imagenes/milpa.jpg') }}"
+                 alt="Agricultura rural">
+
+            <div class="contenido-ruta">
+                <h3>1. Comunidades agrícolas</h3>
+
+                <p>
+                    Conoce las actividades del campo, los cultivos,
+                    la agricultura y la ganadería, que forman parte
+                    de la economía de San José del Rincón.
+                </p>
+
+                <p><b>Ubicación:</b>
+                    Diferentes comunidades rurales del municipio.</p>
+
+                <p><b>Horario:</b>
+                    Acordar la visita con los habitantes.</p>
+
+                <p><b>Actividades:</b>
+                    Conocer las labores agrícolas y la vida rural.</p>
+            </div>
+        </article>
+
+        <article class="lugar-ruta">
+            <img src="{{ url_for('static', filename='imagenes/gastronomia.jpg') }}"
+                 alt="Gastronomía tradicional">
+
+            <div class="contenido-ruta">
+                <h3>2. Gastronomía regional</h3>
+
+                <p>
+                    Conoce los alimentos tradicionales de las
+                    comunidades mazahuas y las costumbres
+                    gastronómicas de la región.
+                </p>
+
+                <p><b>Ubicación:</b>
+                    Comunidades y establecimientos del municipio.</p>
+
+                <p><b>Horario:</b>
+                    Depende de cada establecimiento.</p>
+
+                <p><b>Actividad:</b>
+                    Conocer y disfrutar la comida regional.</p>
+            </div>
+        </article>
+
+        <article class="lugar-ruta">
+            <img src="{{ url_for('static', filename='imagenes/artesanias.jpg') }}"
+                 alt="Artesanías mazahuas">
+
+            <div class="contenido-ruta">
+                <h3>3. Artesanías y cultura mazahua</h3>
+
+                <p>
+                    Descubre la identidad mazahua mediante sus
+                    textiles, bordados, trabajos de madera,
+                    piezas de barro y otras expresiones artesanales.
+                </p>
+
+                <p><b>Ubicación:</b>
+                    Comunidades mazahuas de San José del Rincón.</p>
+
+                <p><b>Horario:</b>
+                    Consultar con los artesanos.</p>
+
+                <p><b>Actividad:</b>
+                    Conocer las tradiciones y artesanías locales.</p>
+            </div>
+        </article> 
+
+    </div>
+
+</section>
+
+<!-- GALERÍA DE LUGARES RURALES -->
+
+
+<!-- NATURALEZA, CULTURA Y GASTRONOMÍA -->
+
+<section class="categorias-turismo">
+
+    <div class="titulo-categorias">
+        <h2>Descubre San José del Rincón</h2>
+        <p>
+            Explora la riqueza natural, cultural y gastronómica
+            de nuestras comunidades rurales.
+        </p>
+    </div>
+
+    <!-- NATURALEZA -->
+
+    <div class="categoria-seccion">
+
+        <div class="categoria-encabezado">
+            <h2>🌲 Naturaleza</h2>
+            <p>Conoce los paisajes y espacios naturales del municipio.</p>
+        </div>
+
+        <div class="galeria-categorias">
+
+            <article class="tarjeta-lugar">
+                <img src="{{ url_for('static', filename='imagenes/la_mesa.jpg') }}"
+                     alt="Santuario La Mesa">
+
+                <div class="datos-lugar">
+                    <h3>Santuario La Mesa</h3>
+                    <p>
+                        Espacio natural rodeado de bosques de pino
+                        y oyamel. Es hogar temporal de la mariposa
+                        monarca durante su hibernación.
+                    </p>
+                    <span>Localidad La Mesa</span>
+                    <a href="https://www.sanjosedelrincon.gob.mx/parador-y-santuario-mariposa-monarca-la-mesa/"
+                       target="_blank">Conocer lugar</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-lugar">
+                <img src="{{ url_for('static', filename='imagenes/uma_las_rosas.jpg') }}"
+                     alt="UMA Las Rosas">
+
+                <div class="datos-lugar">
+                    <h3>UMA Las Rosas</h3>
+                    <p>
+                        Espacio dedicado a la conservación de la
+                        naturaleza, rodeado de bosques de pino
+                        y oyamel.
+                    </p>
+                    <span>Localidad Las Rosas</span>
+                    <a href="https://www.google.com/maps/search/?api=1&query=UMA+Las+Rosas+San+Jose+del+Rincon"
+                       target="_blank">Ver ubicación</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-lugar">
+                <img src="{{ url_for('static', filename='imagenes/campos_rurales.jpg') }}"
+                     alt="Campos rurales">
+
+                <div class="datos-lugar">
+                    <h3>Campos agrícolas</h3>
+                    <p>
+                        Las comunidades rurales conservan actividades
+                        agrícolas y ganaderas que forman parte
+                        de su economía.
+                    </p>
+                    <span>Comunidades rurales</span>
+                    <a href="https://www.google.com/maps/search/?api=1&query=San+Jose+del+Rincon+Estado+de+Mexico"
+                       target="_blank">Ver ubicación</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- CULTURA -->
+
+    <div class="categoria-seccion">
+
+        <div class="categoria-encabezado">
+            <h2>🎭 Cultura y tradiciones</h2>
+            <p>
+                Conoce las costumbres, historia y riqueza
+                de la cultura mazahua.
+            </p>
+        </div>
+
+        <div class="galeria-categorias">
+
+            <article class="tarjeta-lugar">
+                <img src="{{ url_for('static', filename='imagenes/parroquia.jpg') }}"
+                     alt="Parroquia del Señor San José">
+
+                <div class="datos-lugar">
+                    <h3>Parroquia del Señor San José</h3>
+                    <p>
+                        Importante espacio religioso de la cabecera
+                        municipal. Destaca por sus celebraciones
+                        y tradiciones comunitarias.
+                    </p>
+                    <span>San José del Rincón Centro</span>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Parroquia+Senor+San+Jose+San+Jose+del+Rincon"
+                       target="_blank">Ver ubicación</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-lugar">
+                <img src="{{ url_for('static', filename='imagenes/artesanias_mazahuas.jpg') }}"
+                     alt="Artesanías mazahuas">
+
+                <div class="datos-lugar">
+                    <h3>Artesanías mazahuas</h3>
+                    <p>
+                        Destacan los textiles bordados,
+                        prendas tradicionales, piezas de barro
+                        y trabajos artesanales de madera.
+                    </p>
+                    <span>Comunidades mazahuas</span>
+                    <a href="https://www.sanjosedelrincon.gob.mx/turismo/"
+                       target="_blank">Conocer cultura</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-lugar">
+                <img src="{{ url_for('static', filename='imagenes/hacienda_cultural.jpg') }}"
+                     alt="Ex Hacienda La Providencia">
+
+                <div class="datos-lugar">
+                    <h3>Ex Hacienda La Providencia</h3>
+                    <p>
+                        Construcción histórica de 1776 que
+                        forma parte del patrimonio del municipio.
+                    </p>
+                    <span>Localidad Providencia</span>
+                    <a href="https://www.sanjosedelrincon.gob.mx/ex-hacienda-la-providencia/"
+                       target="_blank">Conocer historia</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- GASTRONOMÍA -->
+
+    <div class="categoria-seccion">
+
+        <div class="categoria-encabezado">
+            <h2>🍲 Gastronomía</h2>
+            <p>
+                Descubre los sabores y alimentos tradicionales
+                de las comunidades mazahuas.
+            </p>
+        </div>
+
+        <div class="galeria-categorias">
+
+            <article class="tarjeta-lugar">
+                <img src="{{ url_for('static', filename='imagenes/comida_mazahua.jpg') }}"
+                     alt="Comida tradicional mazahua">
+
+                <div class="datos-lugar">
+                    <h3>Comida tradicional</h3>
+                    <p>
+                        Conoce los platillos caseros y recetas
+                        tradicionales que forman parte de
+                        la identidad gastronómica regional.
+                    </p>
+                    <span>Comunidades del municipio</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-lugar">
+                <img src="{{ url_for('static', filename='imagenes/productos_campo.jpg') }}"
+                     alt="Productos del campo">
+
+                <div class="datos-lugar">
+                    <h3>Productos del campo</h3>
+                    <p>
+                        El maíz y otros productos agrícolas
+                        forman parte de la alimentación y
+                        actividades de las familias rurales.
+                    </p>
+                    <span>Zona rural</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-lugar">
+                <img src="{{ url_for('static', filename='imagenes/gastronomia_local.jpg') }}"
+                     alt="Gastronomía regional">
+
+                <div class="datos-lugar">
+                    <h3>Sabores regionales</h3>
+                    <p>
+                        Descubre preparaciones de temporada,
+                        ingredientes locales y la cocina
+                        tradicional de la región.
+                    </p>
+                    <span>San José del Rincón</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- RECOMENDACIONES -->
+
+<section class="recomendaciones-ruta">
+
+    <h2>Recomendaciones para los visitantes</h2>
+
+    <div class="recomendaciones-grid">
+
+        <div>
+            <h3>🌳 Cuidar la naturaleza</h3>
+            <p>No tirar basura ni dañar los bosques.</p>
+        </div>
+
+        <div>
+            <h3>📍 Planificar la visita</h3>
+            <p>Consultar ubicaciones, caminos y horarios antes de salir.</p>
+        </div>
+
+        <div>
+            <h3>🤝 Respetar la cultura</h3>
+            <p>Valorar las costumbres y tradiciones de las comunidades.</p>
+        </div>
+
+        <div>
+            <h3>📷 Turismo responsable</h3>
+            <p>Solicitar permiso antes de fotografiar personas o propiedades.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="final-rutas">
+    <h2>¡Visita San José del Rincón!</h2>
+    <p>
+        Disfruta sus paisajes, conoce su historia y descubre
+        la riqueza natural y cultural de sus comunidades.
+    </p>
+
+    <a class="boton"
+       href="/lugares">
+       Explorar lugares turísticos
+    </a>
+</section>
+
+{% endblock %}
